@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selftest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfTest">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="126dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:src="@drawable/ic_action_plus"
+        app:backgroundTint="@color/colorSkyBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="160dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_action_phone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="160dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_action_message" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="160dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:src="@drawable/ic_action_email"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="90dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:src="@drawable/ic_action_map"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:src="@drawable/ic_action_capture"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/browse"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/testresultDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Your Test Result"
+        android:textColor="@color/colorBlue"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/testresult"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Test Result"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testresultDisplay"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:src="@drawable/ic_action_browse"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/capture"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/flatView"
+        android:layout_width="263dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flat" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btmoveAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="90dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cast_expanded_controller_progress_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_action_moveangle" />
+
+    <TextView
+        android:id="@+id/moveAngleDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="312dp"
+        android:text="Movement Angle"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

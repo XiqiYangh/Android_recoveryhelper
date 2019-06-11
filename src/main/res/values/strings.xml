@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecoveryHelper</string>
+    <string name="oriValues">%1$.4f</string>
+</resources>
